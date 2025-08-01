@@ -1,4 +1,5 @@
 import { createContext, useContext, useState, ReactNode } from 'react';
+
 import { User } from '../domain/types';
 
 type AuthContextType = {

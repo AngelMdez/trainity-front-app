@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import UsersPage from './features/users/ui';
 import HomePage from './features/home/ui/HomePage';
 import NotFoundPage from './features/notFound/ui/NotFoundPage';

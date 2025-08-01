@@ -1,0 +1,10 @@
+{
+  "home": {
+    "title": "Welcome to the app",
+    "description": "This is a sample application."
+  },
+  "users": {
+    "title": "Users",
+    "create": "Create user"
+  }
+}

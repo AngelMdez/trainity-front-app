@@ -1,0 +1,10 @@
+{
+  "home": {
+    "title": "Bienvenido a la app",
+    "description": "Esta es una aplicación de prueba."
+  },
+  "users": {
+    "title": "Usuarios",
+    "create": "Crear usuario"
+  }
+}

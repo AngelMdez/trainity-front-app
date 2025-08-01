@@ -1,16 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-import './index.css';
-
-// MSW setup
-if (import.meta.env.DEV) {
-  const { worker } = await import('./mocks/browser');
-  await worker.start();
-}
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App'
+import { I18nProvider } from '@/features/i18n/context/I18nProvider'
+import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+    <I18nProvider>
+      <App />
+    </I18nProvider>
+  </React.StrictMode>,
+)

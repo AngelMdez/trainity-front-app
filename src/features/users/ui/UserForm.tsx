@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
+
 import { createUser } from '../api/createUser';
 import { CreateUserInput } from '../domain/types';
 import { isValidUser } from '../domain/validators';
