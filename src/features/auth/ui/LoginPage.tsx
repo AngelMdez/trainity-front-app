@@ -8,7 +8,7 @@ export default function LoginPage() {
   const [password, setPassword] = useState('')
   const [error, setError] = useState<string | null>(null)
   const navigate = useNavigate()
-  const { loginWithEmail, loginWithGoogle } = useAuth()
+  const { loginWithEmail, loginWithGoogle, loginAsDemoUser } = useAuth()
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -28,6 +28,16 @@ export default function LoginPage() {
       navigate('/')
     } catch {
       setError('Google login failed')
+    }
+  }
+
+  const handleDemoLogin = async () => {
+    setError(null)
+    try {
+      await loginAsDemoUser()
+      navigate('/')
+    } catch {
+      setError('Failed to log in as demo user')
     }
   }
 
@@ -72,7 +82,7 @@ export default function LoginPage() {
             <button type='submit' className='w-full bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded'>
               Sign in
             </button>
-            <button type='button' onClick={handleGoogle}
+            <button type='button' onClick={handleDemoLogin}
                     className='w-full bg-indigo-600/70 hover:bg-indigo-500 text-white px-4 py-2 rounded'>
               Sign in as a demo user
             </button>

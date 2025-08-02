@@ -19,6 +19,7 @@ interface AuthContextType {
   loading: boolean
   loginWithEmail: (email: string, password: string) => Promise<void>
   loginWithGoogle: () => Promise<void>
+  loginAsDemoUser: () => Promise<void>
   logout: () => Promise<void>
 }
 
@@ -48,11 +49,16 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     await signOut(auth)
   }
 
+  const loginAsDemoUser = async () => {
+    await signInWithEmailAndPassword(auth, 'demo@trainity.app', 'demouser123')
+  }
+
   const value: AuthContextType = {
     user,
     loading,
     loginWithEmail,
     loginWithGoogle,
+    loginAsDemoUser,
     logout,
   }
 
