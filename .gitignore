@@ -29,3 +29,6 @@ yarn-debug.log*
 # ▶️ OS
 .DS_Store
 Thumbs.db
+
+# ▶️ Firebase
+firestore-mocks/serviceAccount.json

@@ -1,0 +1,35 @@
+{
+  "plans_nutrition": {
+    "plan_bajo_ch": {
+      "name": "Bajo en CH",
+      "calories": 1800,
+      "macros": {
+        "protein": 140,
+        "carbs": 120,
+        "fat": 70
+      },
+      "meals": [
+        "Desayuno",
+        "Almuerzo",
+        "Merienda",
+        "Cena"
+      ]
+    },
+    "plan_equilibrado": {
+      "name": "Equilibrado",
+      "calories": 2200,
+      "macros": {
+        "protein": 150,
+        "carbs": 200,
+        "fat": 80
+      },
+      "meals": [
+        "Desayuno",
+        "Media ma\u00f1ana",
+        "Comida",
+        "Merienda",
+        "Cena"
+      ]
+    }
+  }
+}

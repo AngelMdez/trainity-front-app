@@ -1,0 +1,27 @@
+{
+  "plans_training": {
+    "plan_hipertrofia": {
+      "name": "Hipertrofia",
+      "description": "Plan cl\u00e1sico de hipertrofia para 4 d\u00edas/semana",
+      "daysPerWeek": 4,
+      "split": [
+        "Pecho + Tr\u00edceps",
+        "Espalda + B\u00edceps",
+        "Piernas",
+        "Hombro + Core"
+      ]
+    },
+    "plan_definicion": {
+      "name": "Definici\u00f3n",
+      "description": "Plan de definici\u00f3n con enfoque en cardio y volumen moderado",
+      "daysPerWeek": 5,
+      "split": [
+        "Fullbody",
+        "Cardio HIIT",
+        "Piernas",
+        "Push",
+        "Pull"
+      ]
+    }
+  }
+}

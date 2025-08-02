@@ -1,0 +1,16 @@
+{
+  "users": {
+    "demo-client": {
+      "name": "Mario G\u00f3mez",
+      "email": "mario@trainity.app",
+      "lastLogin": "2025-08-01",
+      "planAssigned": "Definici\u00f3n"
+    },
+    "demo-client-2": {
+      "name": "Ana Mart\u00ednez",
+      "email": "ana@trainity.app",
+      "lastLogin": "2025-07-30",
+      "planAssigned": "Hipertrofia"
+    }
+  }
+}

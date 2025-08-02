@@ -1,0 +1,14 @@
+{
+  "name": "firestore-mocks",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "import:mocks": "chmod +x import-mocks.sh && ./import-mocks.sh",
+    "import:training": "node importTrainingPlans.mjs",
+    "import:nutrition": "node importNutritionPlans.mjs",
+    "import:all": "npm run import:mocks && npm run import:training && npm run import:nutrition"
+  },
+  "dependencies": {
+    "firebase-admin": "^11.10.1"
+  }
+}
