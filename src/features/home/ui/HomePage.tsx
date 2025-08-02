@@ -6,6 +6,8 @@ import {
   UserRound,
 } from 'lucide-react'
 import { useState } from 'react'
+import { UserDropdown } from '@/components/UserDropdown'
+
 
 export default function HomePage() {
   const [selectedTab, setSelectedTab] = useState('exercise')
@@ -15,8 +17,7 @@ export default function HomePage() {
       <div className='flex justify-between items-center mb-6'>
         <div />
         <div className='flex items-center gap-2'>
-          <span className='text-sm text-gray-400'>Demo</span>
-          <div className='w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center'>D</div>
+          <UserDropdown />
         </div>
       </div>
 
