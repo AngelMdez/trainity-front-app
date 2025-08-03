@@ -6,7 +6,9 @@
     "import:mocks": "chmod +x import-mocks.sh && ./import-mocks.sh",
     "import:training": "node importTrainingPlans.mjs",
     "import:nutrition": "node importNutritionPlans.mjs",
-    "import:all": "npm run import:mocks && npm run import:training && npm run import:nutrition"
+    "import:all": "npm run import:mocks && npm run import:training && npm run import:nutrition",
+    "set-role": "node setRole.mjs",
+    "list-users": "node listUsers.mjs"
   },
   "dependencies": {
     "firebase-admin": "^11.10.1"
