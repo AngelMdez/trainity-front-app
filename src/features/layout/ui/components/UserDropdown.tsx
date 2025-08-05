@@ -1,6 +1,6 @@
 import { Menu } from '@headlessui/react'
 import { ChevronDown } from 'lucide-react'
-import { useAuth } from '@/features/auth/domain/auth-context'
+import { useAuth } from '@/features/auth/context/auth-context'
 import { useNavigate } from 'react-router-dom'
 
 export function UserDropdown() {

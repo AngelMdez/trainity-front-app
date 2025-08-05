@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react"
-import { doc, getDoc } from "firebase/firestore"
-import { db } from "@/lib/firebase"
-import { useAuth } from "@/features/auth/domain/auth-context"
+import { useEffect, useState } from 'react'
+import { doc, getDoc } from 'firebase/firestore'
+import { db } from '@/lib/firebase'
+import { useAuth } from '@/features/auth/context/auth-context'
 
 export function useNutritionPlan() {
   const { user } = useAuth()
@@ -10,7 +10,7 @@ export function useNutritionPlan() {
 
   useEffect(() => {
     if (!user) return
-    const ref = doc(db, "mock_users", user.email!)
+    const ref = doc(db, 'mock_users', user.email!)
 
     getDoc(ref)
       .then((docSnap) => {
